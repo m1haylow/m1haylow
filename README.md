@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>m1haylow</title>
+</head>
+<body>
+    <header class="v-header container">
+    <div class="fullscreen-video-wrap">
+        <video src="Video.mp4" autoplay="true" loop="true" muted="true"></video>
+        <script>
+            function setHalfVolume() {
+                var myAudio = document.getElementById("audio");
+                myAudio.volume = 0.3;
+            }
+        </script>
+        
+        <audio id="audio" src="Video.mp3" type="audio/mp3" controls preload="auto" autoplay loop onloadeddata="setHalfVolume()">
 
-You can use the [editor on GitHub](https://github.com/m1haylow/m1haylow/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+    </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+             <h1 id="Text"></h1> 
 
-### Markdown
+            <script type="text/javascript">
+                var i=0, text;
+                text = "m1haylow";
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                function typing() {
+                    if(i<text.length){
+                        document.getElementById("Text").innerHTML +=text.charAt(i);
+                        i++;
+                        setTimeout(typing, 80);
+                    }
+                }
+                typing();
+            </script>
 
-```markdown
-Syntax highlighted code block
+            <p>пЅ‰пЅЌ пЅ†пЅ‰пЅЋпЅ… ' пј’пЅ‹пј‘пј’ пЅЊпЅ…пЅ‡пЅ‰пЅ” пЅ‚пЅЏпЅ™рџЊ№                                     пЅ’пЅЏпЅ“пЅ… пЅЏпЅ† пЅЃпЅЊпЅЊ пЅ—пЅ‰пЅЋпЅ„ рџЊ№ рџЊ№ рџЊ№ рџЊ№</p>
+            <a class="btn" href="https://t.me/m1haylow"><i class="fa fa-telegram"></i>  Telegram</a>
+            <a class="btn" href="https://www.instagram.com/m1haylovv"><i class="fa fa-instagram"></i>  Instagram</a>
+            <a class="btn" href="https://vk.com/m1haylow"><i class="fa fa-vk"></i>  VK</a>
+        </div>
+    
+    </header>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/m1haylow/m1haylow/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
